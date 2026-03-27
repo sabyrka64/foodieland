@@ -1,7 +1,13 @@
 import './Categories.scss'
 import type { TCategoriesProps } from './types'
-import clsx from 'clsx'
+import Section from '@/layouts/Section'
 
 export default ({ className }: TCategoriesProps) => {
-  return <div className={clsx('categories', className)}>Categories</div>
+  return (
+    <Section
+      title="Categories"
+      titleId="categories"
+      link="View All Categories"
+    ></Section>
+  )
 }
