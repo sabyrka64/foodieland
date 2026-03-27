@@ -1,5 +1,5 @@
 import './Field.scss'
-import getIdFromTitle from '@/utils/getIdFromTitle'
+import { getIdFromTitle } from '@/utils'
 import clsx from 'clsx'
 import type { TFieldProps } from './types'
 
