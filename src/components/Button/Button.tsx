@@ -4,6 +4,7 @@ import type { TButtonProps } from './types'
 
 export default ({
   className,
+  mode,
   type = 'button',
   href,
   children,
@@ -15,7 +16,10 @@ export default ({
   const attributesByTag = isLink ? linkAttributes : buttonAttributes
 
   return (
-    <Component className={clsx('button', className)} {...attributesByTag}>
+    <Component
+      className={clsx(`button button--${mode}`, className)}
+      {...attributesByTag}
+    >
       {children}
     </Component>
   )
