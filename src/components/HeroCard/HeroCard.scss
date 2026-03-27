@@ -3,6 +3,7 @@
   grid-template-columns: 48% 1fr;
 
   &__body {
+    position: relative;
     display: grid;
     justify-content: space-between;
     padding: 50px;
@@ -15,7 +16,7 @@
     }
   }
 
-  &__badge {
+  &__body-badge {
     display: inline-flex;
     align-items: center;
     column-gap: 12px;
@@ -77,6 +78,26 @@
       font-weight: 500;
       font-size: 14px;
       color: var(--color-black-600);
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    left: calc(100% - 50px);
+    top: 50px;
+    width: 150px;
+    aspect-ratio: 1;
+
+    @include tablet {
+      right: 50px;
+      top: auto;
+      bottom: calc(100% - 50px);
+      left: auto;
+    }
+
+    @include mobile {
+      right: 20px;
+      width: 80px;
     }
   }
 
