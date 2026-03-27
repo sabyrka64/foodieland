@@ -4,6 +4,7 @@ import type { THeroCardProps } from './types'
 import Icon from '@/components/Icon'
 import Button from '@/components/Button'
 import Tags from '@/components/Tags'
+import badgeImage from '@/assets/images/hero/badge.svg'
 
 export default ({
   badge,
@@ -17,7 +18,7 @@ export default ({
     <div className="hero-card">
       <div className="hero-card__body">
         <div className="hero-card__body-main">
-          <div className="hero-card__badge">
+          <div className="hero-card__body-badge">
             <Image
               className="hero-card__badge-image"
               src={badge.imgSrc}
@@ -48,6 +49,12 @@ export default ({
             <Icon name="play" hasFill />
           </Button>
         </div>
+        <Image
+          className="hero-card__badge"
+          src={badgeImage}
+          width={150}
+          height={150}
+        />
       </div>
       <div className="hero-card__image-wrapper">
         <Image
