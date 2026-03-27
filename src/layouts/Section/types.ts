@@ -5,5 +5,6 @@ export type TSectionProps = PropsWithChildren<
     title: ReactNode
     titleId: string
     description?: ReactNode
+    link?: ReactNode
   } & HTMLAttributes<HTMLElement>
 >
