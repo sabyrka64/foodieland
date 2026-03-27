@@ -1,0 +1,21 @@
+.tags {
+  &__list {
+    display: inline-flex;
+    column-gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px;
+    background-color: var(--color-black-50);
+    border-radius: var(--border-radius-m);
+
+    &-label {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--color-black-600);
+    }
+  }
+} 
