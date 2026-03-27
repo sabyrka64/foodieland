@@ -1,0 +1,87 @@
+.hero-card {
+  display: grid;
+  grid-template-columns: 48% 1fr;
+
+  &__body {
+    display: grid;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--color-cyan);
+
+    &-main {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--shadow);
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    line-height: 1.2;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    color: var(--color-black-600);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    &-body {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    &-name,
+    &-date {
+      line-height: 1;
+    }
+
+    &-name {
+      font-weight: 700;
+    }
+
+    &-date {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--color-black-600);
+    }
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
