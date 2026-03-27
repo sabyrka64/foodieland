@@ -6,5 +6,7 @@ import type {
 
 export type TButtonProps = PropsWithChildren<
   ButtonHTMLAttributes<HTMLButtonElement> &
-    AnchorHTMLAttributes<HTMLAnchorElement>
+    AnchorHTMLAttributes<HTMLAnchorElement> & {
+      mode?: 'cyan'
+    }
 >
