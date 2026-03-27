@@ -2,9 +2,12 @@ import './Button.scss'
 import clsx from 'clsx'
 import type { TButtonProps } from './types'
 
-export default (props: TButtonProps) => {
-  const { className, type = 'button', href, children } = props
-
+export default ({
+  className,
+  type = 'button',
+  href,
+  children,
+}: TButtonProps) => {
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
   const linkAttributes = { href }

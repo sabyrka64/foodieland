@@ -1,12 +1,14 @@
 .button {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.3em;
-  padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  border: var(--border);
-  border-radius: var(--border-radius-m);
+  column-gap: 15px;
+  padding: 18px 36px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: none;
+  border-radius: var(--border-radius-xxs);
 
   @include hover {
     color: var(--color-white);
