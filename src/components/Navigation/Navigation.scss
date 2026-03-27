@@ -1,0 +1,24 @@
+.navigation {
+  &__list {
+    display: flex;
+    column-gap: fluid(60, 20);
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+
+    &::before {
+      @include abs-center;
+
+      content: '';
+      width: calc(100% + 24px);
+      height: 44px;
+    }
+
+    &.is-active {
+      color: var(--color-accent);
+      pointer-events: none;
+    }
+  }
+} 
