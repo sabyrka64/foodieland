@@ -2,9 +2,7 @@ import './BurgerButton.scss'
 import clsx from 'clsx'
 import type { TBurgerButtonProps } from './types'
 
-export default (props: TBurgerButtonProps) => {
-  const { className, extraAttrs } = props
-
+export default ({ className, extraAttrs }: TBurgerButtonProps) => {
   const title = 'Open menu'
 
   return (

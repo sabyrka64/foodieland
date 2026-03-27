@@ -4,8 +4,8 @@
 
   padding: 0;
   background-color: var(--color-black);
-  border: var(--border-width-m) solid var(--color-black);
-  border-radius: var(--border-radius-xs);
+  border: none;
+  border-radius: 10px;
 
   @include hover {
     background-color: var(--color-accent);
