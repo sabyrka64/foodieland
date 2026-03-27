@@ -12,7 +12,7 @@ export default (props: TSectionProps) => {
       aria-labelledby={titleId}
     >
       <header className="section__header">
-        <h2 className="section__title" id={titleId}>
+        <h2 className="section__titlew" id={titleId}>
           {title}
         </h2>
         {description && (
