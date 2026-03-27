@@ -17,14 +17,18 @@ export class MobileMenu {
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
 
-    if (!this.rootElement) return
+    if (!this.rootElement) {
+      return
+    }
 
     this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
     this.burgerButtonElement = this.rootElement.querySelector(
       this.selectors.burgerButton
     )
 
-    if (!this.overlayElement || !this.burgerButtonElement) return
+    if (!this.overlayElement || !this.burgerButtonElement) {
+      return
+    }
 
     this.bindEvents()
   }
