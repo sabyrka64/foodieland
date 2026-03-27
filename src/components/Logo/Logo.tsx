@@ -2,9 +2,7 @@ import './Logo.scss'
 import clsx from 'clsx'
 import type { TLogoProps } from './types'
 
-export default (props: TLogoProps) => {
-  const { className, loading = 'lazy' } = props
-
+export default ({ className, loading = 'lazy' }: TLogoProps) => {
   const title = 'Home'
 
   return (
@@ -18,8 +16,8 @@ export default (props: TLogoProps) => {
         className="logo__image"
         src="/images/logo.svg"
         alt=""
-        width={200}
-        height={68}
+        width={110}
+        height={30}
         loading={loading}
       />
     </a>
