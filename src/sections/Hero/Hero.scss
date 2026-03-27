@@ -1,3 +1,15 @@
 .hero {
-  padding-block: 50px;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-block: fluid(40, 20) var(--section-padding-y);
+
+  @include laptop-s {
+    padding-inline: var(--container-padding-x);
+  }
+
+  &__slider-item {
+    max-width: var(--container-width);
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+  }
 }
